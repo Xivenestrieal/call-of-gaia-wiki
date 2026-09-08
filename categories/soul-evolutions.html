@@ -16,27 +16,31 @@
         h3 {
             text-align: left;
         }
-        .frost-spell-link {
+        .frost-link {
             text-decoration: none;
             color: rgb(14, 218, 207);
         }
-        .blood-spell-link {
+        .absolute-zero-link {
             text-decoration: none;
-            color: rgb(195, 25, 25);
+            color: rgb(8, 239, 247);
         }
-        .major-arcana-spell-link {
+        .major-arcana-link {
             text-decoration: none;
-            color: rgb(118, 8, 159);
+            color: rgb(214, 9, 129);
+        }
+         .singularity-link {
+            text-decoration: none;
+            color: rgb(106, 8, 159);
         }
 
         .fixed-nav-table h2, 
-        .fixed-nav-table h5 {
+        .fixed-nav-table h4 {
             margin: 0;
         }
 
         .fixed-nav-table {
             position: fixed;
-            right: 20px;
+            right: 5px;
             top: 50%;
             transform: translateY(-50%);
             background-color: rgba(255, 255, 255, 0.95);
@@ -65,45 +69,45 @@
 
     <h1>Soul Evolutions</h1>
 
-    <!-- Blood Spells Table -->
+    <!-- Absolute Zero Table -->
     <table style="width: 100%; text-align: center;">
         <tr>
             <th>
-                <h2 id="blood-spells">Blood Spells</h2>
+                <h2 id="absolute-zero-class">Absolute Zero</h2>
             </th>
         </tr>
         <tr>
-            <td><h4 id="blood-wave" class="blood-spell-link">Blood Wave</h4></td>
-        </tr>
-        <tr>
-            <td>Shoot out a wave of acidic blood in the direction you're facing.</td>
-        </tr>
-        <tr>
-            <td><h4 id="blood-surge" class="blood-spell-link">Blood Surge</h4></td>
-        </tr>
-        <tr>
-            <td>Blood surges through your veins, increasing your strength and speed.</td>
-        </tr>
-    ></table>
-
-    <!-- Frost Spells Table -->
-    <table style="width: 100%; text-align: center;">
-        <tr>
-            <th>
-                <h2 id="frost-spells">Frost Spells</h2>
-            </th>
-        </tr>
-        <tr>
-            <td><h4 id="frost-wave" class="frost-spell-link">Frost Wave</h4></td>
+            <td><h4 id="absolute-zero" class="absolute-zero-link">Absolute Zero</h4></td>
         </tr>
         <tr>
             <td>Shoot out a wave of icy energy in the direction you're facing.</td>
         </tr>
         <tr>
-            <td><h4 id="frost-bloom" class="frost-spell-link">Frost Bloom</h4></td>
+            <td><h4 id="absolute-zero-surge" class="absolute-zero-link">Absolute Zero Surge</h4></td>
         </tr>
         <tr>
-            <td>Envelop yourself in a barrier of ice, exploding outwards with icy energy.</td>
+            <td>Icy energy surges through your veins, increasing your strength and speed.</td>
+        </tr>
+    </table>
+
+    <!-- Singularity Table -->
+    <table style="width: 100%; text-align: center;">
+        <tr>
+            <th>
+                <h2 id="singularity-class" class="singularity-link">Singularity</h2>
+            </th>
+        </tr>
+        <tr>
+            <td><h4 id="event-horizon" class="singularity-link">Event Horizon</h4></td>
+        </tr>
+        <tr>
+            <td>Gravity manipulation within domain (change/invert gravity). Upon enough gravity, the «singularity» becomes available.</td>
+        </tr>
+        <tr>
+            <td><h4 id="the-singularity" class="singularity-link">The Singularity</h4></td>
+        </tr>
+        <tr>
+            <td>A dark purple orb appears in the middle of your domain. Everything in its event horizon gets sucked in, and compressed into a ball of matter that starts circling the singularity. </td>
         </tr>
     </table>
 
@@ -115,7 +119,7 @@
             </th>
         </tr>
         <tr>
-            <td><h4 id="the-fool" class="major-arcana-spell-link">0. The Fool</h4></td>
+            <td><h4 id="the-fool" class="major-arcana-link">0. The Fool</h4></td>
         </tr>
         <tr>
             <td>The first attack the player performs every 10 seconds will apply a random stackable positive potion effect onto them. <br>
@@ -123,7 +127,7 @@
             </td>
         </tr>
         <tr>
-            <td><h4 id="the-magician" class="major-arcana-spell-link">I. The Magician</h4></td>
+            <td><h4 id="the-magician" class="major-arcana-link">I. The Magician</h4></td>
         </tr>
         <tr>
             <td>All mana-consuming action performed have an increased potency (the strength of an effect/damage of a spell)<br>
@@ -131,25 +135,25 @@
             </td>
         </tr>
         <tr>
-            <td><h4 id="the-high-priestess" class="major-arcana-spell-link">II. The High Priestess</h4></td>
+            <td><h4 id="the-high-priestess" class="major-arcana-link">II. The High Priestess</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-empress" class="major-arcana-spell-link">III. The Empress</h4></td>
+            <td><h4 id="the-empress" class="major-arcana-link">III. The Empress</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-emperor" class="major-arcana-spell-link">IV. The Emperor</h4></td>
+            <td><h4 id="the-emperor" class="major-arcana-link">IV. The Emperor</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-hierophant" class="major-arcana-spell-link">V. The Hierophant</h4></td>
+            <td><h4 id="the-hierophant" class="major-arcana-link">V. The Hierophant</h4></td>
         </tr>
         <tr>
             <td>Any healing action capable of healing other players will heal an additional 0.5% per 2% <br>
@@ -157,7 +161,7 @@
             </td>
         </tr>
         <tr>
-            <td><h4 id="the-lovers" class="major-arcana-spell-link">VI. The Lovers</h4></td>
+            <td><h4 id="the-lovers" class="major-arcana-link">VI. The Lovers</h4></td>
         </tr>
         <tr>
             <td>Link souls with another player. When two players are soul linked, damage taken is split between 
@@ -167,43 +171,43 @@
 </td>
         </tr>
         <tr>
-            <td><h4 id="the-chariot" class="major-arcana-spell-link">VII. The Chariot</h4></td>
+            <td><h4 id="the-chariot" class="major-arcana-link">VII. The Chariot</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="strength" class="major-arcana-spell-link">VIII. Strength</h4></td>
+            <td><h4 id="strength" class="major-arcana-link">VIII. Strength</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-hermit" class="major-arcana-spell-link">IX. The Hermit</h4></td>
+            <td><h4 id="the-hermit" class="major-arcana-link">IX. The Hermit</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="wheel-of-fortune" class="major-arcana-spell-link">X. Wheel of Fortune</h4></td>
+            <td><h4 id="wheel-of-fortune" class="major-arcana-link">X. Wheel of Fortune</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="justice" class="major-arcana-spell-link">XI. Justice</h4></td>
+            <td><h4 id="justice" class="major-arcana-link">XI. Justice</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-hanged-man" class="major-arcana-spell-link">XII. The Hanged Man</h4></td>
+            <td><h4 id="the-hanged-man" class="major-arcana-link">XII. The Hanged Man</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="death" class="major-arcana-spell-link">XIII. Death</h4></td>
+            <td><h4 id="death" class="major-arcana-link">XIII. Death</h4></td>
         </tr>
         <tr>
             <td>“Kill” a player. Upon fullfiling certain conditions, mark an entity with a death curse.<br>
@@ -212,19 +216,19 @@
             </td>
         </tr>
         <tr>
-            <td><h4 id="temperance" class="major-arcana-spell-link">XIV. Temperance</h4></td>
+            <td><h4 id="temperance" class="major-arcana-link">XIV. Temperance</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-devil" class="major-arcana-spell-link">XV. The Devil</h4></td>
+            <td><h4 id="the-devil" class="major-arcana-link">XV. The Devil</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-tower" class="major-arcana-spell-link">XVI. The Tower</h4></td>
+            <td><h4 id="the-tower" class="major-arcana-link">XVI. The Tower</h4></td>
         </tr>
         <tr>
             <td>Gain immunity to all displacement (knock back/abilities that force movement).<br> Increase the armor
@@ -233,31 +237,31 @@
             </td>
         </tr>
         <tr>
-            <td><h4 id="the-star" class="major-arcana-spell-link">XVII. The Star</h4></td>
+            <td><h4 id="the-star" class="major-arcana-link">XVII. The Star</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-moon" class="major-arcana-spell-link">XVIII. The Moon</h4></td>
+            <td><h4 id="the-moon" class="major-arcana-link">XVIII. The Moon</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-sun" class="major-arcana-spell-link">XIX. The Sun</h4></td>
+            <td><h4 id="the-sun" class="major-arcana-link">XIX. The Sun</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="judgement" class="major-arcana-spell-link">XX. Judgement</h4></td>
+            <td><h4 id="judgement" class="major-arcana-link">XX. Judgement</h4></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-            <td><h4 id="the-world" class="major-arcana-spell-link">XXI. The World</h4></td>
+            <td><h4 id="the-world" class="major-arcana-link">XXI. The World</h4></td>
         </tr>
         <tr>
             <td></td>
@@ -268,27 +272,27 @@
     <table class="fixed-nav-table">
         <tr>
             <th>
-                <h2><a href="#frost-spells" style="text-decoration: none; color: inherit;">Frost Spells</a></h2>
+                <h2><a href="#singularity-class" style="text-decoration: none; color: inherit;">Singularity</a></h2>
             </th>
         </tr>
         <tr>
-            <td><h4><a href="#frost-wave" class="frost-spell-link">Frost Wave</a></h4></td>
+            <td><h4><a href="#event-horizon" class="major-arcana-link">Event Horizon</a></h4></td>
         </tr>
         <tr>
-            <td><h4><a href="#frost-bloom" class="frost-spell-link">Frost Bloom</a></h4></td>
+            <td><h4><a href="#the-singularity" class="major-arcana-link">The Singularity</a></h4></td>
         </tr>
         <tr>
 
             
             <th>
-                <h2><a href="#blood-spells" style="text-decoration: none; color: inherit;">Blood Spells</a></h2>
+                <h2><a href="#absolute-zero-class" style="text-decoration: none; color: inherit;">Absolute Zero</a></h2>
             </th>
         </tr>
         <tr>
-            <td><h4><a href="#blood-wave" class="blood-spell-link">Blood Wave</a></h4></td>
+            <td><h4><a href="#absolute-zero" class="absolute-zero-link">Absolute Zero Surge</a></h4></td>
         </tr>
         <tr>
-            <td><h4><a href="#blood-surge" class="blood-spell-link">Blood Surge</a></h4></td>
+            <td><h4><a href="#absolute-zero" class="absolute-zero-link">Absolute Zero</a></h4></td>
         </tr>
 
 
@@ -296,70 +300,70 @@
                 <h2><a href="#major-arcana" style="text-decoration: none; color: inherit;">Major Arcana</a></h2>
             </th>
         <tr>
-            <td><h5><a href="#the-fool" class="major-arcana-spell-link">0. The Fool</a></h5></td>
+            <td><h4><a href="#the-fool" class="major-arcana-link">0. The Fool</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-magician" class="major-arcana-spell-link">I. The Magician</a></h5></td>
+            <td><h4><a href="#the-magician" class="major-arcana-link">I. The Magician</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-high-priestess" class="major-arcana-spell-link">II. The High Priestess</a></h5></td>
+            <td><h4><a href="#the-high-priestess" class="major-arcana-link">II. The High Priestess</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-empress" class="major-arcana-spell-link">III. The Empress</a></h5></td>
+            <td><h4><a href="#the-empress" class="major-arcana-link">III. The Empress</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-emperor" class="major-arcana-spell-link">IV. The Emperor</a></h5></td>
+            <td><h4><a href="#the-emperor" class="major-arcana-link">IV. The Emperor</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-hierophant" class="major-arcana-spell-link">V. The Hierophant</a></h5></td>
+            <td><h4><a href="#the-hierophant" class="major-arcana-link">V. The Hierophant</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-lovers" class="major-arcana-spell-link">VI. The Lovers</a></h5></td>
+            <td><h4><a href="#the-lovers" class="major-arcana-link">VI. The Lovers</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-chariot" class="major-arcana-spell-link">VII. The Chariot</a></h5></td>
+            <td><h4><a href="#the-chariot" class="major-arcana-link">VII. The Chariot</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#strength" class="major-arcana-spell-link">VIII. Strength</a></h5></td>
+            <td><h4><a href="#strength" class="major-arcana-link">VIII. Strength</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-hermit" class="major-arcana-spell-link">IX. The Hermit</a></h5></td>
+            <td><h4><a href="#the-hermit" class="major-arcana-link">IX. The Hermit</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#wheel-of-fortune" class="major-arcana-spell-link">X. Wheel of Fortune</a></h5></td>
+            <td><h4><a href="#wheel-of-fortune" class="major-arcana-link">X. Wheel of Fortune</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#justice" class="major-arcana-spell-link">XI. Justice</a></h5></td>
+            <td><h4><a href="#justice" class="major-arcana-link">XI. Justice</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-hanged-man" class="major-arcana-spell-link">XII. The Hanged Man</a></h5></td>
+            <td><h4><a href="#the-hanged-man" class="major-arcana-link">XII. The Hanged Man</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#death" class="major-arcana-spell-link">XIII. Death</a></h5></td>
+            <td><h4><a href="#death" class="major-arcana-link">XIII. Death</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#temperance" class="major-arcana-spell-link">XIV. Temperance</a></h5></td>
+            <td><h4><a href="#temperance" class="major-arcana-link">XIV. Temperance</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-devil" class="major-arcana-spell-link">XV. The Devil</a></h5></td>
+            <td><h4><a href="#the-devil" class="major-arcana-link">XV. The Devil</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-tower" class="major-arcana-spell-link">XVI. The Tower</a></h5></td>
+            <td><h4><a href="#the-tower" class="major-arcana-link">XVI. The Tower</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-star" class="major-arcana-spell-link">XVII. The Star</a></h5></td>
+            <td><h4><a href="#the-star" class="major-arcana-link">XVII. The Star</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-moon" class="major-arcana-spell-link">XVIII. The Moon</a></h5></td>
+            <td><h4><a href="#the-moon" class="major-arcana-link">XVIII. The Moon</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-sun" class="major-arcana-spell-link">XIX. The Sun</a></h5></td>
+            <td><h4><a href="#the-sun" class="major-arcana-link">XIX. The Sun</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#judgement" class="major-arcana-spell-link">XX. Judgement</a></h5></td>
+            <td><h4><a href="#judgement" class="major-arcana-link">XX. Judgement</a></h4></td>
         </tr>
         <tr>
-            <td><h5><a href="#the-world" class="major-arcana-spell-link">XXI. The World</a></h5></td>
+            <td><h4><a href="#the-world" class="major-arcana-link">XXI. The World</a></h4></td>
         </tr>
         
     </table>
