@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soul Evolutions</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         .main-link {
             font-size: 60px; 
             color: rgba(131, 7, 219, 1); 
@@ -28,7 +31,7 @@
             text-decoration: none;
             color: rgb(214, 9, 129);
         }
-         .singularity-link {
+        .singularity-link {
             text-decoration: none;
             color: rgb(106, 8, 159);
         }
@@ -48,7 +51,9 @@
             padding: 12px 18px;
             border-radius: 8px;
             z-index: 1000;
-            width: 180px;
+            width: 200px;
+            max-height: 80vh;
+            overflow-y: auto;
         }
 
         .fixed-nav-table tr {
@@ -58,6 +63,16 @@
         .fixed-nav-table th, .fixed-nav-table td {
             text-align: right;
             padding: 3px 0;
+        }
+
+        .fixed-nav-table summary {
+            cursor: pointer;
+            outline: none;
+            list-style: none; /* no funny arrow */
+            user-select: none;
+        }
+        .fixed-nav-table summary::-webkit-details-marker {
+            display: none;
         }
     </style>
 </head>
@@ -111,7 +126,7 @@
         </tr>
     </table>
 
-        <!-- Major Arcana Table -->
+    <!-- Major Arcana Table -->
     <table style="width: 100%; text-align: center;">
         <tr>
             <th>
@@ -137,21 +152,15 @@
         <tr>
             <td><h4 id="the-high-priestess" class="major-arcana-link">II. The High Priestess</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-empress" class="major-arcana-link">III. The Empress</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-emperor" class="major-arcana-link">IV. The Emperor</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-hierophant" class="major-arcana-link">V. The Hierophant</h4></td>
         </tr>
@@ -167,45 +176,33 @@
             <td>Link souls with another player. When two players are soul linked, damage taken is split between 
                 both players,<br> and the player who initiated the soul link receives 20% of both attack power and 
                 defence of the other linked player’s.<br> If either player dies, the other will as well, and the soul 
-                link ability will enter a long state of cooldown.<<br> Tarot card cannot be switched while on cooldown. 
-</td>
+                link ability will enter a long state of cooldown.<br> Tarot card cannot be switched while on cooldown. 
+            </td>
         </tr>
         <tr>
             <td><h4 id="the-chariot" class="major-arcana-link">VII. The Chariot</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="strength" class="major-arcana-link">VIII. Strength</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-hermit" class="major-arcana-link">IX. The Hermit</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="wheel-of-fortune" class="major-arcana-link">X. Wheel of Fortune</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="justice" class="major-arcana-link">XI. Justice</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-hanged-man" class="major-arcana-link">XII. The Hanged Man</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="death" class="major-arcana-link">XIII. Death</h4></td>
         </tr>
@@ -218,15 +215,11 @@
         <tr>
             <td><h4 id="temperance" class="major-arcana-link">XIV. Temperance</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-devil" class="major-arcana-link">XV. The Devil</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-tower" class="major-arcana-link">XVI. The Tower</h4></td>
         </tr>
@@ -239,133 +232,107 @@
         <tr>
             <td><h4 id="the-star" class="major-arcana-link">XVII. The Star</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-moon" class="major-arcana-link">XVIII. The Moon</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-sun" class="major-arcana-link">XIX. The Sun</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="judgement" class="major-arcana-link">XX. Judgement</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <tr><td></td></tr>
         <tr>
             <td><h4 id="the-world" class="major-arcana-link">XXI. The World</h4></td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
-    ></table>
+        <tr><td></td></tr>
+    </table>
 
-    <!-- Fixed Sidebar Navigation -->
+    <!-- Fixed Sidebar Navigation Accordion -->
     <table class="fixed-nav-table">
         <tr>
             <th>
-                <h2><a href="#singularity-class" style="text-decoration: none; color: inherit;">Singularity</a></h2>
+                <details name="sidebar-nav" open>
+                    <summary onclick="document.getElementById('singularity-class').scrollIntoView();">
+                        <h2>Singularity</h2>
+                    </summary>
+                    <table style="width: 100%;">
+                        <tr><td><h4><a href="#event-horizon" class="singularity-link">Event Horizon</a></h4></td></tr>
+                        <tr><td><h4><a href="#the-singularity" class="singularity-link">The Singularity</a></h4></td></tr>
+                    </table>
+                </details>
             </th>
         </tr>
         <tr>
-            <td><h4><a href="#event-horizon" class="singularity-link">Event Horizon</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-singularity" class="singularity-link">The Singularity</a></h4></td>
-        </tr>
-        <tr>
-
-            
             <th>
-                <h2><a href="#absolute-zero-class" style="text-decoration: none; color: inherit;">Absolute Zero</a></h2>
+                <details name="sidebar-nav">
+                    <summary onclick="document.getElementById('absolute-zero-class').scrollIntoView();">
+                        <h2>Absolute Zero</h2>
+                    </summary>
+                    <table style="width: 100%;">
+                        <tr><td><h4><a href="#absolute-zero-surge" class="absolute-zero-link">Absolute Zero Surge</a></h4></td></tr>
+                        <tr><td><h4><a href="#absolute-zero" class="absolute-zero-link">Absolute Zero</a></h4></td></tr>
+                    </table>
+                </details>
             </th>
         </tr>
         <tr>
-            <td><h4><a href="#absolute-zero" class="absolute-zero-link">Absolute Zero Surge</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#absolute-zero" class="absolute-zero-link">Absolute Zero</a></h4></td>
-        </tr>
-
-
             <th>
-                <h2><a href="#major-arcana" style="text-decoration: none; color: inherit;">Major Arcana</a></h2>
+                <details name="sidebar-nav">
+                    <summary onclick="document.getElementById('major-arcana').scrollIntoView();">
+                        <h2>Major Arcana</h2>
+                    </summary>
+                    <table style="width: 100%;">
+                        <tr><td><h4><a href="#the-fool" class="major-arcana-link">0. The Fool</a></h4></td></tr>
+
+                        <tr><td><h4><a href="#the-magician" class="major-arcana-link">I. The Magician</a></h4></td></tr>
+
+                        <tr><td><h4><a href="#the-high-priestess" class="major-arcana-link">II. The High Priestess</a></h4></td></tr>
+                       
+                        <tr><td><h4><a href="#the-empress" class="major-arcana-link">III. The Empress</a></h4></td></tr>
+                        
+                        <tr><td><h4><a href="#the-emperor" class="major-arcana-link">IV. The Emperor</a></h4></td></tr>
+                        
+                        <tr><td><h4><a href="#the-hierophant" class="major-arcana-link">V. The Hierophant</a></h4></td></tr>
+                       
+                        <tr><td><h4><a href="#the-lovers" class="major-arcana-link">VI. The Lovers</a></h4></td></tr>
+                       
+                        <tr><td><h4><a href="#the-chariot" class="major-arcana-link">VII. The Chariot</a></h4></td></tr>
+                      
+                        <tr><td><h4><a href="#strength" class="major-arcana-link">VIII. Strength</a></h4></td></tr>
+                      
+                        <tr><td><h4><a href="#the-hermit" class="major-arcana-link">IX. The Hermit</a></h4></td></tr>
+                     
+                        <tr><td><h4><a href="#wheel-of-fortune" class="major-arcana-link">X. Wheel of Fortune</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#justice" class="major-arcana-link">XI. Justice</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#the-hanged-man" class="major-arcana-link">XII. The Hanged Man</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#death" class="major-arcana-link">XIII. Death</a></h4></td></tr>
+                   
+                        <tr><td><h4><a href="#temperance" class="major-arcana-link">XIV. Temperance</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#the-devil" class="major-arcana-link">XV. The Devil</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#the-tower" class="major-arcana-link">XVI. The Tower</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#the-star" class="major-arcana-link">XVII. The Star</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#the-moon" class="major-arcana-link">XVIII. The Moon</a></h4></td></tr>
+                     
+                        <tr><td><h4><a href="#the-sun" class="major-arcana-link">XIX. The Sun</a></h4></td></tr>
+                     
+                        <tr><td><h4><a href="#judgement" class="major-arcana-link">XX. Judgement</a></h4></td></tr>
+                    
+                        <tr><td><h4><a href="#the-world" class="major-arcana-link">XXI. The World</a></h4></td></tr>
+                    </table>
+                </details>
             </th>
-        <tr>
-            <td><h4><a href="#the-fool" class="major-arcana-link">0. The Fool</a></h4></td>
         </tr>
-        <tr>
-            <td><h4><a href="#the-magician" class="major-arcana-link">I. The Magician</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-high-priestess" class="major-arcana-link">II. The High Priestess</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-empress" class="major-arcana-link">III. The Empress</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-emperor" class="major-arcana-link">IV. The Emperor</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-hierophant" class="major-arcana-link">V. The Hierophant</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-lovers" class="major-arcana-link">VI. The Lovers</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-chariot" class="major-arcana-link">VII. The Chariot</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#strength" class="major-arcana-link">VIII. Strength</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-hermit" class="major-arcana-link">IX. The Hermit</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#wheel-of-fortune" class="major-arcana-link">X. Wheel of Fortune</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#justice" class="major-arcana-link">XI. Justice</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-hanged-man" class="major-arcana-link">XII. The Hanged Man</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#death" class="major-arcana-link">XIII. Death</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#temperance" class="major-arcana-link">XIV. Temperance</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-devil" class="major-arcana-link">XV. The Devil</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-tower" class="major-arcana-link">XVI. The Tower</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-star" class="major-arcana-link">XVII. The Star</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-moon" class="major-arcana-link">XVIII. The Moon</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-sun" class="major-arcana-link">XIX. The Sun</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#judgement" class="major-arcana-link">XX. Judgement</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#the-world" class="major-arcana-link">XXI. The World</a></h4></td>
-        </tr>
-        
     </table>
 </body>
 </html>

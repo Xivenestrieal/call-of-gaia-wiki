@@ -55,6 +55,15 @@
             text-align: right;
             padding: 3px 0;
         }
+        .fixed-nav-table summary {
+            cursor: pointer;
+            outline: none;
+            list-style: none; /* no funny arrow */
+            user-select: none;
+        }
+        .fixed-nav-table summary::-webkit-details-marker {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -132,38 +141,46 @@
     <table class="fixed-nav-table">
         <tr>
             <th>
-                <h2><a href="#frost-spells" style="text-decoration: none; color: inherit;">Cryomancy Spells</a></h2>
+                <details name="sidebar-nav" open>
+                    <summary onclick="document.getElementById('frost-class').scrollIntoView();">
+                        <h2>Cryomancy</h2>
+                    </summary>
+                    <table style="width: 100%;">
+                        <tr><td><h4><a href="#frost-wave" class="frost-spell-link">Frost Wave</a></h4></td></tr>
+                        <tr><td><h4><a href="#frost-bloom" class="frost-spell-link">Frost Bloom</a></h4></td></tr>
+                    </table>
+                </details>
             </th>
         </tr>
-        <tr>
-            <td><h4><a href="#frost-wave" class="frost-spell-link">Frost Wave</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#frost-bloom" class="frost-spell-link">Frost Bloom</a></h4></td>
-        </tr>
-        <tr>
 
             
+             <tr>
             <th>
-                <h2><a href="#blood-spells" style="text-decoration: none; color: inherit;">Blood Spells</a></h2>
+                <details name="sidebar-nav" open>
+                    <summary onclick="document.getElementById('blood-class').scrollIntoView();">
+                        <h2>Blood Magic</h2>
+                    </summary>
+                    <table style="width: 100%;">
+                        <tr><td><h4><a href="#blood-wave" class="blood-spell-link">Blood Wave</a></h4></td></tr>
+                        <tr><td><h4><a href="#blood-surge" class="blood-spell-link">Blood Surge</a></h4></td></tr>
+                    </table>
+                </details>
             </th>
-        </tr>
-        <tr>
-            <td><h4><a href="#blood-wave" class="blood-spell-link">Blood Wave</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#blood-surge" class="blood-spell-link">Blood Surge</a></h4></td>
         </tr>
 
 
+         <tr>
             <th>
-                <h2><a href="#gravity-spells" style="text-decoration: none; color: inherit;">Gravity Spells</a></h2>
+                <details name="sidebar-nav" open>
+                    <summary onclick="document.getElementById('gravity-class').scrollIntoView();">
+                        <h2>Gravity Magic</h2>
+                    </summary>
+                    <table style="width: 100%;">
+                        <tr><td><h4><a href="#gravity-wave" class="gravity-spell-link">Gravity Wave</a></h4></td></tr>
+                        <tr><td><h4><a href="#wormhole" class="gravity-spell-link">Wormhole</a></h4></td></tr>
+                    </table>
+                </details>
             </th>
-        <tr>
-            <td><h4><a href="#gravity-wave" class="gravity-spell-link">Gravity Wave</a></h4></td>
-        </tr>
-        <tr>
-            <td><h4><a href="#gravity-bloom" class="gravity-spell-link">Wormhole</a></h4></td>
         </tr>
     </table>
 
