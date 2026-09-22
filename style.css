@@ -11,14 +11,14 @@
     --text-muted: #a0a0a0;
 
     /* Magic Element Brand Colors */
-    --blood-color: #e63946;
-    --frost-color: #0edacf;
-    --gravity-color: #a855f7;
+    --blood-spell-color: #e63946;
+    --frost-spell-color: #0edacf;
+    --gravity-spell-color: #a855f7;
 
     /* Element Hover Colors */
-    --blood-color-hover: #ff4d5a;
-    --frost-color-hover: #1fffe0;
-    --gravity-color-hover: #c77dff;
+    --blood-spell-color-hover: #ff4d5a;
+    --frost-spell-color-hover: #1fffe0;
+    --gravity-spell-color-hover: #c77dff;
 
     /* General Accents */
     --main-title-color: rgba(131, 7, 219, 1);
@@ -73,9 +73,9 @@ h3 {
 }
 
 /* Category / Section Accent Headers */
-#blood-spells { color: var(--blood-color); }
-#frost-spells { color: var(--frost-color); }
-#gravity-spells { color: var(--gravity-color); }
+#blood-spells { color: var(--blood-spell-color-hover); }
+#frost-spells { color: var(--frost-spell-color-hover); }
+#gravity-spells { color: var(--gravity-spell-color-hover); }
 
 /* ==========================================================================
    4. NAVIGATION & LINK STYLES
@@ -90,14 +90,14 @@ a {
 }
 
 /* Element Link Variants (Spells, Evolutions, Entities) */
-.blood-link, .blood-spell-link { color: var(--blood-color); text-decoration: none; }
-.blood-link:hover, .blood-spell-link:hover { color: var(--blood-color-hover); }
+.blood-spell-link { color: var(--blood-spell-color); text-decoration: none; }
+.blood-spell-link:hover { color: var(--blood-spell-color-hover); }
 
-.frost-link, .frost-spell-link { color: var(--frost-color); text-decoration: none; }
-.frost-link:hover, .frost-spell-link:hover { color: var(--frost-color-hover); }
+.frost-spell-link { color: var(--frost-spell-color); text-decoration: none; }
+.frost-spell-link:hover { color: var(--frost-spell-color-hover); }
 
-.gravity-link, .gravity-spell-link { color: var(--gravity-color); text-decoration: none; }
-.gravity-link:hover, .gravity-spell-link:hover { color: var(--gravity-color-hover); }
+.gravity-spell-link { color: var(--gravity-spell-color); text-decoration: none; }
+.gravity-spell-link:hover { color: var(--gravity-spell-color-hover); }
 
 /* Custom Unique Links */
 .absolute-zero-link { text-decoration: none; color: rgb(8, 239, 247); }
@@ -118,14 +118,14 @@ a {
 }
 
 /* Card Accent Borders */
-.blood-card { border-left: 5px solid var(--blood-color); }
-.blood-card .spell-title { color: var(--blood-color); }
+.blood-card { border-left: 5px solid var(--blood-spell-color); }
+.blood-card .spell-title { color: var(--blood-spell-color); }
 
-.frost-card { border-left: 5px solid var(--frost-color); }
-.frost-card .spell-title { color: var(--frost-color); }
+.frost-card { border-left: 5px solid var(--frost-spell-color); }
+.frost-card .spell-title { color: var(--frost-spell-color); }
 
-.gravity-card { border-left: 5px solid var(--gravity-color); }
-.gravity-card .spell-title { color: var(--gravity-color); }
+.gravity-card { border-left: 5px solid var(--gravity-spell-color); }
+.gravity-card .spell-title { color: var(--gravity-spell-color); }
 
 /* Left Image Box */
 .spell-image-wrapper {
