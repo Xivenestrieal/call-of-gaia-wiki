@@ -1,0 +1,225 @@
+  h1 {
+            text-align: center;
+        }
+        .main-link {
+            font-size: 60px; 
+            color: rgba(131, 7, 219, 1); 
+            text-decoration: none; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .category-link {
+            text-decoration: none;
+            color: rgb(50, 25, 195);
+        }
+         :root {
+    --bg-dark: #1a1a1c; 
+}
+
+body {
+    background-color: var(--bg-dark); 
+    color: var(--text-main);        
+}
+        :root {
+            --bg-dark: #1a1a1c;
+            --card-bg: #252529;
+            --header-bg: #2d2d32;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            
+            /* Element Colors */
+            --blood-color: #e63946;
+            --frost-color: #0edacf;
+            --gravity-color: #a855f7;
+
+            --blood-color-hover: #ff4d5a;
+            --frost-color-hover: #1fffe0;
+            --gravity-color-hover: #c77dff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 240px 40px 40px; 
+        }
+
+        .main-link {
+            font-size: 50px; 
+            color: rgba(131, 7, 219, 1); 
+            text-decoration: none; 
+            display: block;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-top: 50px;
+        }
+
+        /* Element Color Headers */
+        #blood-spells { color: var(--blood-color); }
+        #frost-spells { color: var(--frost-color); }
+        #gravity-spells { color: var(--gravity-color); }
+
+        /* --- SPELL CARD WIKI LAYOUT --- */
+        .spell-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid #38383f;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        /* Card Header */
+        .spell-card-header {
+            background-color: var(--header-bg);
+            padding: 12px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #38383f;
+        }
+
+        .spell-title {
+            font-size: 1.3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        /* Left Image Container */
+.spell-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    min-width: 100px;
+    border-right: 1px solid var(--border-color, #38383f);
+}
+
+.spell-icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    image-rendering: pixelated; /* Keeps Minecraft pixel art icons crisp */
+}
+
+/* Right Content Wrapper (Fills remaining space) */
+.spell-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+        .blood-card { border-left: 5px solid var(--blood-color); }
+        .blood-card .spell-title { color: var(--blood-color); }
+
+        .frost-card { border-left: 5px solid var(--frost-color); }
+        .frost-card .spell-title { color: var(--frost-color); }
+
+        .gravity-card { border-left: 5px solid var(--gravity-color); }
+        .gravity-card .spell-title { color: var(--gravity-color); }
+
+        /* Stat Grid (Cooldown, Damage, Cast Time, Mana) */
+        .spell-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.85rem;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #fff;
+            margin-top: 2px;
+        }
+
+        /* Card Body / Description */
+        .spell-description {
+            padding: 15px 18px;
+            line-height: 1.5;
+            color: #ccc;
+        }
+
+        /* --- FIXED SIDEBAR NAVIGATION --- */
+        .fixed-nav-table {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 12px 16px;
+            border-radius: 8px;
+            z-index: 1000;
+            width: 180px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .fixed-nav-table summary {
+            cursor: pointer;
+            outline: none;
+            list-style: none;
+            user-select: none;
+            color: #fff;
+        }
+
+        .fixed-nav-table summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .fixed-nav-table a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 2px 0;
+        }
+
+        .blood-link { color: var(--blood-color); }
+        .frost-link { color: var(--frost-color); }
+        .gravity-link { color: var(--gravity-color); }
+
+        .blood-link:hover { color: var(--blood-color-hover); }
+        .frost-link:hover { color: var(--frost-color-hover); }
+        .gravity-link:hover { color: var(--gravity-color-hover); }
+
+/* Card Container*/
+.spell-card {
+    display: flex; 
+    background-color: var(--card-bg, #252529);
+    border-radius: 8px;
+    border: 1px solid var(--border-color, #38383f);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+

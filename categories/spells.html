@@ -3,186 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spells</title>
-    <style>
-        .main-link {
-            font-size: 60px; 
-            color: rgba(131, 7, 219, 1); 
-            text-decoration: none; 
-        }
-        h1 {
-            text-align: center;
-        }
-        h3 {
-            text-align: left;
-        }
-        .frost-spell-link {
-            text-decoration: none;
-            color: rgb(14, 218, 207);
-        }
-        .blood-spell-link {
-            text-decoration: none;
-            color: rgb(195, 25, 25);
-        }
-        .gravity-spell-link {
-            text-decoration: none;
-            color: rgb(118, 8, 159);
-        }
-
-        .fixed-nav-table h2, 
-        .fixed-nav-table h4 {
-            margin: 0;
-        }
-
-        .fixed-nav-table {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(255, 255, 255, 0.95);
-            border: none;
-            padding: 12px 18px;
-            border-radius: 8px;
-            z-index: 1000;
-            width: 180px;
-        }
-
-        .fixed-nav-table tr {
-            line-height: 1.1; 
-        }
-
-        .fixed-nav-table th, .fixed-nav-table td {
-            text-align: right;
-            padding: 3px 0;
-        }
-        .fixed-nav-table summary {
-            cursor: pointer;
-            outline: none;
-            list-style: none; /* no funny arrow */
-            user-select: none;
-        }
-        .fixed-nav-table summary::-webkit-details-marker {
-            display: none;
-        }
-    </style>
+    <title>Spells - Call Of Gaia</title>
+<link rel="stylesheet" href="/style.css">
 </head>
+
+
 <body>
 
     <h1>
         <a class="main-link" href="/index.html">Call Of Gaia</a>
     </h1>
 
-    <h1>Spells</h1>
+    <h1>Spells Index</h1>
 
-    <!-- Blood Spells Table -->
-    <table style="width: 100%; text-align: center;">
-        <tr>
-            <th>
-                <h2 id="blood-spells">Blood Spells</h2>
-            </th>
-        </tr>
-        <tr>
-            <td><h4 id="blood-wave" class="blood-spell-link">Blood Wave</h4></td>
-        </tr>
-        <tr>
-            <td>Shoot out a wave of acidic blood in the direction you're facing.</td>
-        </tr>
-        <tr>
-            <td><h4 id="blood-surge" class="blood-spell-link">Blood Surge</h4></td>
-        </tr>
-        <tr>
-            <td>Blood surges through your veins, increasing your strength and speed.</td>
-        </tr>
-    ></table>
+    <!-- BLOOD SPELLS SECTION -->
+    <h2 id="blood-spells" class="section-title">Blood Magic</h2>
 
-    <!-- Frost Spells Table -->
-    <table style="width: 100%; text-align: center;">
-        <tr>
-            <th>
-                <h2 id="frost-spells">Frost Spells</h2>
-            </th>
-        </tr>
-        <tr>
-            <td><h4 id="frost-wave" class="frost-spell-link">Frost Wave</h4></td>
-        </tr>
-        <tr>
-            <td>Shoot out a wave of icy energy in the direction you're facing.</td>
-        </tr>
-        <tr>
-            <td><h4 id="frost-bloom" class="frost-spell-link">Frost Bloom</h4></td>
-        </tr>
-        <tr>
-            <td>Envelop yourself in a barrier of ice, exploding outwards with icy energy.</td>
-        </tr>
-    </table>
+<div class="spell-card blood-card" id="blood-wave">
+    
+      <!-- Left Side: Image -->
+    <div class="spell-image-wrapper">
+        <img src="../images/mcsword.png" alt="blood Wave" class="spell-icon">
+    </div>
 
-        <!-- Gravity Spells Table -->
-    <table style="width: 100%; text-align: center;">
-        <tr>
-            <th>
-                <h2 id="gravity-spells">Gravity Spells</h2>
-            </th>
-        </tr>
-        <tr>
-            <td><h4 id="gravity-wave" class="gravity-spell-link">Gravity Wave</h4></td>
-        </tr>
-        <tr>
-            <td>Shoot out a wave of gravitational energy in the direction you're facing.</td>
-        </tr>
-        <tr>
-            <td><h4 id="gravity-bloom" class="gravity-spell-link">Wormhole</h4></td>
-        </tr>
-        <tr>
-            <td>Collapse space around you, creating a Wormhole. You can use it to traverse short distances quickly.</td>
-        </tr>
-    ></table>
+    <div class="spell-card blood-card" id="blood-wave">
+        <div class="spell-card-header">
+            <h3 class="spell-title">Blood Wave</h3>
+        </div>
+        <div class="spell-stats">
+            <div class="stat-item"><span class="stat-label">Mana Cost</span><span class="stat-value">15% Max HP</span></div>
+            <div class="stat-item"><span class="stat-label">Cooldown</span><span class="stat-value">20.0s</span></div>
+            <div class="stat-item"><span class="stat-label">Cast Time</span><span class="stat-value">0.5s</span></div>
+            <div class="stat-item"><span class="stat-label">Buff Duration</span><span class="stat-value">8.0s</span></div>
+        </div>
+        <div class="spell-description">
+            Blood surges through your veins, drastically increasing your movement speed and physical attack power for a brief duration.
+        </div>
+    </div>
+</div>
 
-    <!-- Fixed Sidebar Navigation -->
-    <table class="fixed-nav-table">
-        <tr>
-            <th>
-                <details name="sidebar-nav" open>
-                    <summary onclick="document.getElementById('frost-class').scrollIntoView();">
-                        <h2>Cryomancy</h2>
-                    </summary>
-                    <table style="width: 100%;">
-                        <tr><td><h4><a href="#frost-wave" class="frost-spell-link">Frost Wave</a></h4></td></tr>
-                        <tr><td><h4><a href="#frost-bloom" class="frost-spell-link">Frost Bloom</a></h4></td></tr>
-                    </table>
-                </details>
-            </th>
-        </tr>
+<div class="spell-card blood-card" id="blood-wave">
 
-            
-             <tr>
-            <th>
-                <details name="sidebar-nav" open>
-                    <summary onclick="document.getElementById('blood-class').scrollIntoView();">
-                        <h2>Blood Magic</h2>
-                    </summary>
-                    <table style="width: 100%;">
-                        <tr><td><h4><a href="#blood-wave" class="blood-spell-link">Blood Wave</a></h4></td></tr>
-                        <tr><td><h4><a href="#blood-surge" class="blood-spell-link">Blood Surge</a></h4></td></tr>
-                    </table>
-                </details>
-            </th>
-        </tr>
+      <!-- Left Side: Image -->
+    <div class="spell-image-wrapper">
+        <img src="../images/mcsword.png" alt="blood Wave" class="spell-icon">
+    </div>
+
+    <div class="spell-card blood-card" id="blood-wave">
+        <div class="spell-card-header">
+            <h3 class="spell-title">Blood Wave</h3>
+        </div>
+        <div class="spell-stats">
+            <div class="stat-item"><span class="stat-label">Mana Cost</span><span class="stat-value">15% Max HP</span></div>
+            <div class="stat-item"><span class="stat-label">Cooldown</span><span class="stat-value">20.0s</span></div>
+            <div class="stat-item"><span class="stat-label">Cast Time</span><span class="stat-value">0.5s</span></div>
+            <div class="stat-item"><span class="stat-label">Buff Duration</span><span class="stat-value">8.0s</span></div>
+        </div>
+        <div class="spell-description">
+            Blood surges through your veins, drastically increasing your movement speed and physical attack power for a brief duration.
+        </div>
+    </div>
+</div>
+
+    <!-- FROST SPELLS SECTION -->
+    <h2 id="frost-spells" class="section-title">Cryomancy</h2>
+
+<div class="spell-card frost-card" id="frost-wave">
+    
+    <!-- Left Side: Image -->
+    <div class="spell-image-wrapper">
+        <img src="../images/mcsword.png" alt="Frost Wave" class="spell-icon">
+    </div>
+
+    <!-- Right Side: All Text Content -->
+    <div class="spell-card-content">
+        <div class="spell-card-header">
+            <h3 class="spell-title">Frost Wave</h3>
+        </div>
+        <div class="spell-stats">
+            <div class="stat-item"><span class="stat-label">Mana Cost</span><span class="stat-value">30 MP</span></div>
+            <div class="stat-item"><span class="stat-label">Cooldown</span><span class="stat-value">5.0s</span></div>
+            <div class="stat-item"><span class="stat-label">Cast Time</span><span class="stat-value">Instant</span></div>
+            <div class="stat-item"><span class="stat-label">Damage</span><span class="stat-value">8.0 (Frost)</span></div>
+        </div>
+        <div class="spell-description">
+            Shoots out a wave of icy energy forward, slowing down any targets caught in its path for 3 seconds.
+        </div>
+    </div>
+
+</div>
+
+    <!-- GRAVITY SPELLS SECTION -->
+    <h2 id="gravity-spells" class="section-title">Gravity Magic</h2>
+
+    <div class="spell-card gravity-card" id="gravity-wave">
+        <div class="spell-card-header">
+            <h3 class="spell-title">Gravity Wave</h3>
+        </div>
+        <div class="spell-stats">
+            <div class="stat-item"><span class="stat-label">Mana Cost</span><span class="stat-value">40 MP</span></div>
+            <div class="stat-item"><span class="stat-label">Cooldown</span><span class="stat-value">8.0s</span></div>
+            <div class="stat-item"><span class="stat-label">Cast Time</span><span class="stat-value">Instant</span></div>
+            <div class="stat-item"><span class="stat-label">Damage</span><span class="stat-value">10.0 (Force)</span></div>
+        </div>
+        <div class="spell-description">
+            Shoots out a wave of concentrated gravitational force that pushes back all targets caught in its path.
+        </div>
+    </div>
+
+    <div class="spell-card gravity-card" id="wormhole">
+        <div class="spell-card-header">
+            <h3 class="spell-title">Wormhole</h3>
+        </div>
+        <div class="spell-stats">
+            <div class="stat-item"><span class="stat-label">Mana Cost</span><span class="stat-value">70 MP</span></div>
+            <div class="stat-item"><span class="stat-label">Cooldown</span><span class="stat-value">18.0s</span></div>
+            <div class="stat-item"><span class="stat-label">Cast Time</span><span class="stat-value">Instant</span></div>
+            <div class="stat-item"><span class="stat-label">Range</span><span class="stat-value">16 Blocks</span></div>
+        </div>
+        <div class="spell-description">
+            Collapses space around you to instantaneously open a spatial rift, allowing you to teleport short distances instantly.
+        </div>
+    </div>
 
 
-         <tr>
-            <th>
-                <details name="sidebar-nav" open>
-                    <summary onclick="document.getElementById('gravity-class').scrollIntoView();">
-                        <h2>Gravity Magic</h2>
-                    </summary>
-                    <table style="width: 100%;">
-                        <tr><td><h4><a href="#gravity-wave" class="gravity-spell-link">Gravity Wave</a></h4></td></tr>
-                        <tr><td><h4><a href="#wormhole" class="gravity-spell-link">Wormhole</a></h4></td></tr>
-                    </table>
-                </details>
-            </th>
-        </tr>
-    </table>
+    <!-- FIXED SIDEBAR NAVIGATION -->
+    <div class="fixed-nav-table">
+        <details name="sidebar-nav" open>
+            <summary onclick="document.getElementById('blood-spells').scrollIntoView();">
+                <h3 style="margin: 0; color: var(--blood-color);">Blood Magic</h3>
+            </summary>
+            <a href="#blood-wave" class="blood-link">Blood Wave</a>
+            <a href="#blood-surge" class="blood-link">Blood Surge</a>
+        </details>
+
+        <details name="sidebar-nav" style="margin-top: 10px;">
+            <summary onclick="document.getElementById('frost-spells').scrollIntoView();">
+                <h3 style="margin: 0; color: var(--frost-color);">Cryomancy</h3>
+            </summary>
+            <a href="#frost-wave" class="frost-link">Frost Wave</a>
+            <a href="#frost-bloom" class="frost-link">Frost Bloom</a>
+        </details>
+
+        <details name="sidebar-nav" style="margin-top: 10px;">
+            <summary onclick="document.getElementById('gravity-spells').scrollIntoView();">
+                <h3 style="margin: 0; color: var(--gravity-color);">Gravity Magic</h3>
+            </summary>
+            <a href="#gravity-wave" class="gravity-link">Gravity Wave</a>
+            <a href="#wormhole" class="gravity-link">Wormhole</a>
+        </details>
+    </div>
 
 </body>
 </html>
